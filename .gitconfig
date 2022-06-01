@@ -1,0 +1,12 @@
+[core]
+	editor = code --wait
+	autocrlf = true
+	pager = cat
+[user]
+	email = 103181931+Akrambayou@users.noreply.github.com
+	name = Akrambayou
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
